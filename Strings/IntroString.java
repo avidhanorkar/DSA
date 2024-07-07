@@ -5,8 +5,8 @@ public class IntroString {
 
     public static void main(String[] args) {
         // Strings Declaration
-        String name = "Avishkar"; 
-        String firstName = new String("Avishkar");// Declaration of String using the String Class
+        // String name = "Avishkar"; 
+        // String firstName = new String("Avishkar");// Declaration of String using the String Class
         // Taking input for String
         Scanner sc = new Scanner(System.in);
         String fullName;

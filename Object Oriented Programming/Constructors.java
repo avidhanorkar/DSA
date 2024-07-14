@@ -28,5 +28,9 @@ public class Constructors {
         Student s2 = new Student(); // creating object s2 using unparameterized Constructor
         Student s3 = new Student(s1); // Creating a new object s3 by copying the properties of the student s1
         System.out.println(s1.name);
+        s2.name = "Avishkar";
+        System.out.println("The values of the properties in s3 object created using the copy constructor are: ");
+        System.out.println("Name: " + s3.name);
+        System.out.println("age: " + s3.age);
     }
 }

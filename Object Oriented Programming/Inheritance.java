@@ -31,3 +31,5 @@ public class Inheritance{
 // 4. Hybrid Inheritance: BaseClass (-> DerivedClass1 -> DerivedClass2) (->  DerivedClass)
 
 // Multiple Inheritance: It is not supported in Java because of the diamond problem.
+
+// Diamond Problem: If a class is derived from two base classes and these base classes have functions with same name but different implementation, then the derived class would have difficulty in determinig which method to inherit.

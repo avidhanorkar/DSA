@@ -22,3 +22,12 @@ public class Inheritance{
         d.bark();  // dog object using the property of its own class
     }
 }
+
+
+// There are 4 types of Inheritances in Java:
+// 1. Single Inheritance: BaseClass -> DerivedClass
+// 2. Multileve Inheritance: BaseClass -> DerivedClass1 -> DerivedClass2
+// 3. Heirarchial Inheritance: BaseClass (-> DerivedClass1) (-> DerivedClass2) (-> DerivedClass3)
+// 4. Hybrid Inheritance: BaseClass (-> DerivedClass1 -> DerivedClass2) (->  DerivedClass)
+
+// Multiple Inheritance: It is not supported in Java because of the diamond problem.

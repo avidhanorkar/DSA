@@ -39,5 +39,6 @@ class Ghoda extends Horse {
 public class AbstractClasses{
     public static void main(String[] args){
         Ghoda mazaGhoda = new Ghoda();
+        mazaGhoda.walk();
     }
 }

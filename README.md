@@ -36,12 +36,7 @@ This repository is licensed under the [MIT License](https://opensource.org/licen
 * `folder`: Name Specified for the content it is holding
 * `files`: Located inside the folder contianing the implementation of the concept
 
-## Getting Started
----------------
-
-To get started, navigate to the `algorithms` or `data-structures` directory and explore the implementations.
-
 ## Acknowledgments
 ----------------
 
-* [Your Name] for creating and maintaining this repository
+* Avishkar Dhanorkar for creating and maintaining this repository

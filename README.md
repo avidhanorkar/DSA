@@ -33,9 +33,8 @@ This repository is licensed under the [MIT License](https://opensource.org/licen
 ## Directory Structure
 ---------------------
 
-* `algorithms`: implementations of various algorithms
-* `data-structures`: implementations of various data structures
-* `examples`: example use cases for the algorithms and data structures
+* `folder`: Name Specified for the content it is holding
+* `files`: Located inside the folder contianing the implementation of the concept
 
 ## Getting Started
 ---------------

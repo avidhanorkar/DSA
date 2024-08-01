@@ -1,5 +1,7 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "IDX.aI.enableInlineCompletion": true,
-    "IDX.aI.enableCodebaseIndexing": true
+    "IDX.aI.enableCodebaseIndexing": true,
+    "editor.fontSize": 20,
+    "editor.wordWrap": "on"
 }

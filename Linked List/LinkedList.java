@@ -94,23 +94,102 @@ public class LinkedList {
         size --;
     }
 
+    // Method to search a key iteratively in the linked list
+    public static int searchIteratively(int key){
+        int i = 0;
+        Node temp = head;
+        while (temp.next != null) {
+            if (temp.data == key){
+                return i;
+            } else {
+                i++;
+                temp = temp.next;
+            }
+        }
+        return -1;
+    }
+
+    // Method to search a key recursively in the linked list
+    public static int searchRecursively(int key, Node node, int i){
+        if (node == null){
+            return -1;
+        }
+        if (key == node.data){
+            return i;
+        }
+        return searchRecursively(key, node.next, i+1);
+    }
+
+    // Method to reverse a linked list
+    public static void reverse(){
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+
+        while (curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
+
+    // Method to find and remove the nth element in the Linked List
+    public static int removeNth(int n){
+        Node temp = head;
+        int i = 0;
+        while (temp != null){
+            if (temp.next == null){
+                return -1;
+            } else if (i == n-2) {
+                temp.next = temp.next.next;
+                return i;
+            } else {
+                temp = temp.next;
+                i++; 
+            }
+        }
+        return -1;
+    }
 
     public static void main(String[] args) {
-        LinkedList ll = new LinkedList();
-        ll.addElemAtFirst(10);
-        ll.addElemAtFirst(20);
-        ll.addElemAtFirst(30);
-        ll.addElemAtLast(40);
-        ll.addElemAtLast(50);
-        ll.addElemAtRandom(2, 25);
-        ll.printLinkedList();
-        System.out.println("Size of the Linked List is: " +ll.size);
-        ll.removeHead();
+        // Adding elements
+        LinkedList.addElemAtFirst(10);
+        LinkedList.addElemAtFirst(20);
+        LinkedList.addElemAtFirst(30);
+        LinkedList.addElemAtLast(40);
+        LinkedList.addElemAtLast(50);
+        LinkedList.addElemAtRandom(2, 25);
+        // Printing Linked List
+        LinkedList.printLinkedList();
+        // Printing Size of linked list
+        System.out.println("Size of the Linked List is: " +LinkedList.size);
+        // Removing the head of the linked list
+        LinkedList.removeHead();
         System.out.print("After removing element at the head: ");
-        ll.printLinkedList();
+        LinkedList.printLinkedList();
         System.out.println();
-        ll.removeTail();
+        // Removing the tail of the linked list
+        LinkedList.removeTail();
         System.out.println("After removing the element at the tail: ");
-        ll.printLinkedList();
+        LinkedList.printLinkedList();
+        // Searching Iteratively
+        int key = 10;
+        int idx = searchIteratively(key);
+        System.out.println("The key: " + key + " is at the index: " + idx);
+        // Search Recursively
+        int recIdx = searchRecursively(10, head, 0);
+        System.out.println("The key: " + key + " is at the index: " + recIdx);
+        // Reversing the linked list 
+        LinkedList.reverse();
+        System.out.print("After reversing the linked list: ");
+        LinkedList.printLinkedList();
+        System.out.println();
+        // Removing the nth node from the end
+        int n = 2;
+        int idxN = removeNth(n);
+        System.out.println("The element at the nth position from the end is: " + idxN);
+        LinkedList.printLinkedList();
     }
 }

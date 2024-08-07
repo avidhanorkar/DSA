@@ -1,5 +1,3 @@
-import org.junit.platform.engine.support.hierarchical.Node;
-
 public class DetectCycle {
     static class Node {
         int data;
@@ -81,7 +79,6 @@ public class DetectCycle {
         DetectCycle.addElems(40);
         DetectCycle.addElems(50);
         tail.next = head.next.next.next;
-        boolean cycleDetected = DetectCycle.detectCycle();
         DetectCycle.removeLoop();
         DetectCycle.printLL();
     }

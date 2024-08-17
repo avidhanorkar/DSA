@@ -11,7 +11,7 @@ public class ValidParenthesis {
                 st.push(s.charAt(i));
             } else{
                 if (st.isEmpty()){
-                    valid = false;
+                    return false;
                 } else if ((s.charAt(i) == ')' && st.peek() == '(') || (s.charAt(i) == ']' && st.peek() == '[') || (s.charAt(i) == '}' && st.peek() == '{') ){
                     st.pop();
                 } else {
@@ -23,7 +23,7 @@ public class ValidParenthesis {
     }
 
     public static void main(String[] args) {
-        String s = "({[]}())";
+        String s = "[";
         System.out.println("The validity of the string is: " + isValid(s));
     }
 }

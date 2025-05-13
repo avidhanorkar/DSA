@@ -1,3 +1,4 @@
+package Searching;
 public class BinarySearchCode {
     // Requires a sorted array
     // Time Complexity: O(log N)

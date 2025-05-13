@@ -1,3 +1,4 @@
+package Searching;
 public class LinearSearch {
     // Time Complexity: O(n)
     // Space Complexity: O(1) - constant

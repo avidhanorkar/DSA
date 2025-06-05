@@ -1,4 +1,3 @@
-package BasicMaths;
 
 public class CheckForPrime {
     public static boolean isPrime (int n) {

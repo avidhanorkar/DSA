@@ -1,6 +1,3 @@
-package BasicMaths;
-
-
 // Armstrong Numbers: 
     // sum of digits where each digts are raised to the number of digits
     // Example: 
